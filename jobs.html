@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </head>
+  <body>
+    <!--<p id="demo"></p>-->
+    <div id="jobs">
+      <p v-for="event in event" :key="event.message"><a v-bind:href = "event.url" target = "_blank">{{event.message}} </a></p>
+      <p>You can contact the daycare at:</p>
+      <p><a href="tel:+1-​605-716-3090">​605-716-3090</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
